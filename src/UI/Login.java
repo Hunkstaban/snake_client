@@ -2,14 +2,9 @@ package UI;
 
 import java.awt.EventQueue;
 
-import javax.swing.JFrame;
-import javax.swing.JButton;
-import javax.swing.JTextField;
-import javax.swing.JTextArea;
+import javax.swing.*;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
 
 import java.awt.Font;
 
@@ -64,9 +59,14 @@ public class Login extends JPanel {
 		JLabel lblPassword = new JLabel("Password:");
 		lblPassword.setFont(new Font("Tahoma", Font.PLAIN, 33));
 		lblPassword.setBounds(176, 344, 181, 33);
-		add(lblPassword);		
+		add(lblPassword);
+
+		JLabel background = new JLabel("");
+		background.setIcon(new ImageIcon(Login.class.getResource("/Images/zoo1.png")));
+		background.setBounds(0,0,630,338);
+		add(background);
 	}
-	
+
 	
 	public void addActionListeners(ActionListener l){
 	
