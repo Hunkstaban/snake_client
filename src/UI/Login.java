@@ -11,7 +11,7 @@ import java.awt.Font;
 public class Login extends JPanel {
 
 	private JTextField userName;
-	private JTextField password;
+	private JPasswordField password;
 	private JButton btnLogin;
 	private JLabel lblNewLabel;
 
@@ -40,7 +40,7 @@ public class Login extends JPanel {
 		add(userName);
 		userName.setColumns(10);
 		
-		password = new JTextField();
+		password = new JPasswordField();
 		password.setFont(new Font("Tahoma", Font.PLAIN, 33));
 		password.setBounds(383, 341, 326, 50);
 		add(password);
@@ -61,10 +61,10 @@ public class Login extends JPanel {
 		lblPassword.setBounds(176, 344, 181, 33);
 		add(lblPassword);
 
-		JLabel background = new JLabel("");
+		/*JLabel background = new JLabel("");
 		background.setIcon(new ImageIcon(Login.class.getResource("/Images/zoo1.png")));
 		background.setBounds(0,0,630,338);
-		add(background);
+		add(background);*/
 	}
 
 	
