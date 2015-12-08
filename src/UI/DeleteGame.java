@@ -22,6 +22,7 @@ public class DeleteGame extends JPanel {
 	private JComboBox comboBox;
 	private JLabel lblDeleteGame;
 
+	//class constructor
 	public DeleteGame() {
 		initialize();
 	}
@@ -29,6 +30,7 @@ public class DeleteGame extends JPanel {
 	private void initialize() {
 		
 		setLayout(null);
+		//adding the necessary buttons, labels and combobox for the delete panel
 		JLabel lblChooseGameYou = new JLabel("Choose game you want to delete:");
 		lblChooseGameYou.setFont(new Font("Tahoma", Font.BOLD, 20));
 		lblChooseGameYou.setBounds(110, 124, 456, 33);
@@ -54,7 +56,8 @@ public class DeleteGame extends JPanel {
 		lblDeleteGame.setBounds(25, 25, 300, 40);
 		add(lblDeleteGame);
 	}
-	
+
+	//adding actions listeners to the buttons, so they can be used
 	public void addActionListeners(ActionListener delete) {
 		btnBack.addActionListener(delete);
 		btnDelete.addActionListener(delete);

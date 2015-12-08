@@ -24,8 +24,8 @@ public class Screen extends JFrame {
 
 	//class constructor
 	public Screen(){
-		//adding contentpane to make declare the size of the panels + cardlayout, so the user will be able to navigate
-		// through the different GUI panels
+		/*adding contentpane to declare the size of the panels and adding a cardlayout, so the user will
+		be able to navigate through the different GUI panels*/
 		contentpane = new JPanel();
 		contentpane.setBorder(new EmptyBorder(5,5,5,5));
 		contentpane.setLayout(new BorderLayout(1050, 700));

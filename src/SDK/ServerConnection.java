@@ -5,6 +5,8 @@ import com.sun.jersey.api.client.WebResource;
 /**
  * Created by Peter on 03-12-2015.
  */
+
+//class which will make it possible to connect to the server
 public class ServerConnection {
 
 

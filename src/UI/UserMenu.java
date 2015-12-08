@@ -27,6 +27,8 @@ public class UserMenu extends JPanel {
 	private void initialize() {
 		
 		setLayout(null);
+
+		//adding the necesarry labels and buttons for the User Menu
 		JLabel lblMenu = new JLabel("Menu");
 		lblMenu.setFont(new Font("Tahoma", Font.BOLD, 40));
 		lblMenu.setBounds(25, 25, 300, 40);
@@ -53,7 +55,8 @@ public class UserMenu extends JPanel {
 		btnLogOut.setBounds(150, 369, 300, 60);
 		add(btnLogOut);
 	}
-	
+
+	//adding actionlisteners to the buttons, so that they can be used
 	public void addActionListeners(ActionListener l) {
 		btnPlayGame.addActionListener(l);
 		btnHighscores.addActionListener(l);

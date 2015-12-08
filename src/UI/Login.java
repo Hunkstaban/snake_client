@@ -11,26 +11,26 @@ import java.awt.Font;
 //Login class which inherits the methods and attributes of JPanel
 public class Login extends JPanel {
 
+	//declaring the instance variables
 	private JTextField userName;
 	private JPasswordField password;
 	private JButton btnLogin;
 	private JLabel lblNewLabel;
 
+	//class constructor which will run the method initialize();
 	public Login() {
 		initialize();
 	}
 
-	/**
-	 * Initialize the contents of the frame.
-	 */
+	//Initialize the contents of the frame.
 	private void initialize() {
-		setLayout(null);	
+		setLayout(null);
+
+		//adding the necessary buttons, text fields and buttons
 		btnLogin = new JButton("Login");
 		btnLogin.setFont(new Font("Tahoma", Font.PLAIN, 33));
 		btnLogin.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				
-			}
+			public void actionPerformed(ActionEvent arg0) {}
 		});
 		btnLogin.setBounds(400, 464, 200, 60);
 		add(btnLogin);
@@ -63,12 +63,12 @@ public class Login extends JPanel {
 		add(lblPassword);
 	}
 
-	
+	//adding actionlistener to the login button, so that it can be used
 	public void addActionListeners(ActionListener l){
-	
 		btnLogin.addActionListener(l); 
 	}
-	
+
+
 	public String getUserName() {
 		return userName.getText();
 	}
