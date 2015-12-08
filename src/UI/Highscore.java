@@ -67,11 +67,12 @@ public class Highscore extends JPanel {
 		private String[] columns = {"Username","Score","GameID"};
 		private int numberOfRows;
 
-
+		//creating arraylist
 		public HighscoreTable(ArrayList<Score> highscores) {
 			this.highscores = highscores;
 		}
 
+		//creating getters to be used by other classes
 		public int getColumnCount() {
 			return columns.length;
 		}
