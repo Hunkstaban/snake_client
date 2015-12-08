@@ -1,22 +1,20 @@
 package UI;
 
-import java.awt.EventQueue;
 import java.awt.Font;
 
-import javax.swing.JFrame;
+
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.JTextArea;
+
 
 import DTO.Game;
 
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
-import java.awt.event.ActionEvent;
 import javax.swing.JComboBox;
 
+//DeleteGame class which inherits the methods and attributes of JPanel
 public class DeleteGame extends JPanel {
 
 	private JButton btnBack;

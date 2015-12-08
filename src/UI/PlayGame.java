@@ -8,6 +8,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import java.awt.Font;
 
+//highscore class which inherits the methods and attributes of JPanel
 public class PlayGame extends JPanel {
 	private JLabel lblChooseFromOption;
 	private JButton btnCreateGame;

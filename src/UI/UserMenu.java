@@ -17,14 +17,13 @@ public class UserMenu extends JPanel {
 	private JButton btnHighscores;
 	private JButton btnDeleteGame;
 	private JButton btnLogOut;
-	
+
+	//UserMenu class which inherits the methods and attributes of JPanel
 	public UserMenu() {
 		initialize();
 	}
 
-	/**
-	 * Initialize the contents of the frame.
-	 */
+	//Initialize the contents of the panel
 	private void initialize() {
 		
 		setLayout(null);

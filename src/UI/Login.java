@@ -8,6 +8,7 @@ import java.awt.event.ActionEvent;
 
 import java.awt.Font;
 
+//Login class which inherits the methods and attributes of JPanel
 public class Login extends JPanel {
 
 	private JTextField userName;

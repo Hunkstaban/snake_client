@@ -7,6 +7,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
+//highscore class which inherits the methods and attributes of JFrame
 public class Screen extends JFrame {
 	
 	private JPanel mainPanel;

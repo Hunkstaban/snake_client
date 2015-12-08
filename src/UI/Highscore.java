@@ -10,6 +10,7 @@ import javax.swing.table.AbstractTableModel;
 import java.awt.Font;
 import java.util.ArrayList;
 
+//highscore class which inherits the methods and attributes of JPanel
 public class Highscore extends JPanel {
 
 	
@@ -18,8 +19,9 @@ public class Highscore extends JPanel {
 	private JButton btnBack;
 	
 
-	
+	//constructor for the highscore class
 	public Highscore() {
+		//will run the initialize method
 		initialize();
 	}
 
