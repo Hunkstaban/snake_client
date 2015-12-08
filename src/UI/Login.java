@@ -61,11 +61,6 @@ public class Login extends JPanel {
 		lblPassword.setFont(new Font("Tahoma", Font.PLAIN, 33));
 		lblPassword.setBounds(176, 344, 181, 33);
 		add(lblPassword);
-
-		/*JLabel background = new JLabel("");
-		background.setIcon(new ImageIcon(Login.class.getResource("/Images/zoo1.png")));
-		background.setBounds(0,0,630,338);
-		add(background);*/
 	}
 
 	
