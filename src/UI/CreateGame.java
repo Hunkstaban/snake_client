@@ -16,6 +16,8 @@ import java.awt.Font;
 
 //CreateGame class which inherits the methods and attributes of JPanel
 public class CreateGame extends JPanel {
+
+	//declaring the instance variables
 	private JLabel lblCreateGame;
 	private JButton btnBack;
 	private JTextField gameName;

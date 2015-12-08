@@ -9,7 +9,8 @@ import javax.swing.border.EmptyBorder;
 
 //highscore class which inherits the methods and attributes of JFrame
 public class Screen extends JFrame {
-	
+
+	//declaring the instance variables
 	private JPanel mainPanel;
 	private CardLayout cL;
 	private Login login;
@@ -20,8 +21,10 @@ public class Screen extends JFrame {
 	private PlayGame play;
 	private CreateGame create;
 	private JoinGame join;
-	
+
+	//class constructor
 	public Screen(){
+		//
 		contentpane = new JPanel();
 		contentpane.setBorder(new EmptyBorder(5,5,5,5));
 		contentpane.setLayout(new BorderLayout(1050, 700));
@@ -35,7 +38,8 @@ public class Screen extends JFrame {
 		play = new PlayGame();
 		create = new CreateGame();
 		join = new JoinGame();
-		
+
+		//adding the different panels, so the user will be able to navigate through them
 		mainPanel.setLayout(cL);
 		mainPanel.add(login, "loginPanel");
 		mainPanel.add(userMenu,"menuPanel");

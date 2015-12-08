@@ -12,6 +12,7 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 public class Controller {
+	//declaring the instance variables
 	private Screen screen;
 	private User currentUser;
 	private API api;
@@ -19,6 +20,7 @@ public class Controller {
 	private ArrayList<Game> games;
 	private ArrayList<Game> gamesToDelete;
 
+	//class constructor
 	public Controller() {
 		screen = new Screen();
 		currentUser = new User();

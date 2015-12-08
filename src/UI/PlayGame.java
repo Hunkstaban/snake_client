@@ -10,22 +10,25 @@ import java.awt.Font;
 
 //highscore class which inherits the methods and attributes of JPanel
 public class PlayGame extends JPanel {
+
+	//declaring the instance variables
 	private JLabel lblChooseFromOption;
 	private JButton btnCreateGame;
 	private JButton btnJoinGame;
 	private JButton btnBack;
 	private JLabel lblPlayGame;
 
-	/**
-	 * Create the panel.
-	 */
+	//class constructor
 	public PlayGame() {
+		//will run the initialize method
 		initialize();
 	}
-		
+
+		//method that will show the contents of the panel
 		private void initialize() {
 		setLayout(null);
-		
+
+		//adding the necessary labels and buttons for the panel
 		lblChooseFromOption = new JLabel("Choose from option below");
 		lblChooseFromOption.setFont(new Font("Tahoma", Font.PLAIN, 33));
 		lblChooseFromOption.setBounds(258, 197, 480, 33);
@@ -53,7 +56,7 @@ public class PlayGame extends JPanel {
 
 	}
 
-	
+	//adding actionlisteners to the buttons so that they can be used
 	public void addActionListeners(ActionListener l) {
 		btnCreateGame.addActionListener(l);
 		btnJoinGame.addActionListener(l);
