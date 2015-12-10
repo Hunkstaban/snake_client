@@ -5,7 +5,6 @@ import DTO.Score;
 import DTO.User;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import org.codehaus.jettison.json.JSONException;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;

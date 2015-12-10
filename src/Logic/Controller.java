@@ -40,7 +40,7 @@ public class Controller {
 
 	/*creating classes within the Controller class which inherits the methods and attributes of ActionListener.
 	These classes will contain methods (actionPerformed()) which determine what will happen in the different panels,
-	when the different buttons/comboboxes are pressed or if there is something entered into the textfields*/
+	when the different buttons/comboboxes are pressed or if something is entered into the textfields*/
 	private class LoginActionListener implements ActionListener {
 
 		@Override
