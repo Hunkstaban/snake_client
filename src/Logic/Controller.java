@@ -191,6 +191,7 @@ public class Controller {
 				game.setMapSize(10);
 				String serverMessage = api.createGame(game);
 				JOptionPane.showMessageDialog(screen, serverMessage);
+				screen.show("menuPanel");
 				break;
 			}
 		}
@@ -225,7 +226,7 @@ public class Controller {
 					}
 				}
 				JOptionPane.showMessageDialog(screen, serverMessage + "\n The winner was: " + game.getWinner().getUsername());
-
+				screen.show("menuPanel");
 
 				break;
 			}
