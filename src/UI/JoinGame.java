@@ -21,6 +21,7 @@ public class JoinGame extends JPanel {
 	private JTextField controls;
 	private JLabel lblControls;
 	private JButton btnPlay;
+	private JLabel lblReminder;
 
 	/**
 	 * Create the panel.
@@ -55,9 +56,16 @@ public class JoinGame extends JPanel {
 		
 		lblControls = new JLabel("Controls:");
 		lblControls.setFont(new Font("Tahoma", Font.PLAIN, 33));
-		lblControls.setBounds(311, 263, 165, 33);
+		lblControls.setBounds(311, 263, 500, 33);
 		add(lblControls);
-		
+
+		lblReminder = new JLabel("(Remember: use WASD)");
+		lblReminder.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblReminder.setBounds(311,362,350,33);
+		add(lblReminder);
+
+
+
 		btnPlay = new JButton("Play");
 		btnPlay.setFont(new Font("Tahoma", Font.PLAIN, 33));
 		btnPlay.setBounds(660, 470, 200, 60);

@@ -27,6 +27,7 @@ public class CreateGame extends JPanel {
 	private JLabel lblChooseOpponent;
 	private JComboBox comboBoxOpponent;
 	private JButton btnCreateGame;
+	private JLabel lblReminder;
 
 	//the class constructor
 	public CreateGame() {
@@ -59,8 +60,13 @@ public class CreateGame extends JPanel {
 		
 		lblControls = new JLabel("Controls:");
 		lblControls.setFont(new Font("Tahoma", Font.PLAIN, 33));
-		lblControls.setBounds(466, 147, 207, 33);
+		lblControls.setBounds(466, 147, 500, 33);
 		add(lblControls);
+
+		lblReminder = new JLabel("(Remember: use WASD)");
+		lblReminder.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblReminder.setBounds(466,250,350,33);
+		add(lblReminder);
 
 		//adding a textfield, which enables the user to input controls for the game
 		controls = new JTextField();
