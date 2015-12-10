@@ -7,7 +7,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
-//highscore class which inherits the methods and attributes of JFrame
+//Screen class which inherits the methods and attributes of JFrame
 public class Screen extends JFrame {
 
 	//declaring the instance variables
@@ -52,6 +52,7 @@ public class Screen extends JFrame {
 		mainPanel.add(create,"createPanel");
 		mainPanel.add(join, "joinPanel");
 		mainPanel.setBounds(100, 100, 1056, 703);
+		//when X is pushed, the program will terminate
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 

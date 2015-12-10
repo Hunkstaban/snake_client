@@ -86,7 +86,7 @@ public class CreateGame extends JPanel {
 		comboBoxOpponent.setBounds(70, 314, 437, 57);
 		add(comboBoxOpponent);
 
-		//adding a button which will enable the user to create a game
+		//adding a button which, when added logic, will enable the user to create a game
 		btnCreateGame = new JButton("Create game");
 		btnCreateGame.setFont(new Font("Tahoma", Font.PLAIN, 33));
 		btnCreateGame.setBounds(558, 314, 220, 60);
@@ -94,7 +94,7 @@ public class CreateGame extends JPanel {
 
 	}
 	
-	//adding actionlisteners to the buttons, so they can be pushed and work
+	//adding actionlisteners to the buttons, so they can be used
 	public void addActionListeners(ActionListener l) {
 		btnBack.addActionListener(l);
 		btnCreateGame.addActionListener(l);

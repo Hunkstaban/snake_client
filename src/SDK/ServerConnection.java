@@ -9,14 +9,16 @@ import com.sun.jersey.api.client.WebResource;
 //class which will make it possible to connect to the server
 public class ServerConnection {
 
-
+    //constructor
     public ServerConnection(){
         this.hostAddress="http://localhost";
         this.port=8888;
         }
 
+    //declaring instance variables
     private String hostAddress;
     private int port;
+
 
     public void setHostAddress(String hostAddress) {
         this.hostAddress = hostAddress;
