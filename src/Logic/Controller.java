@@ -188,6 +188,7 @@ public class Controller {
 				}
 				game.setHost(host);
 				game.setOpponent(opponent);
+				//map size is hardcoded to always be 10x10
 				game.setMapSize(10);
 				String serverMessage = api.createGame(game);
 				JOptionPane.showMessageDialog(screen, serverMessage);
@@ -220,13 +221,20 @@ public class Controller {
 				String serverMessage = api.joinGame(game);
 				game = api.startGame(game);
 
-				for(User user:users){
-					if (user.getId()==game.getWinner().getId()){
+
+				for(User user:users) {
+					if (user.getId() == game.getWinner().getId()) {
 						game.getWinner().setUsername(user.getUsername());
 					}
 				}
-				JOptionPane.showMessageDialog(screen, serverMessage + "\n The winner was: " + game.getWinner().getUsername());
-				screen.show("menuPanel");
+
+				if (game.getWinner().getUsername() == null) {
+					JOptionPane.showMessageDialog(screen, serverMessage + "\n The game was a draw!");
+					screen.show("menuPanel");
+				} else {
+					JOptionPane.showMessageDialog(screen, serverMessage + "\n The winner was: " + game.getWinner().getUsername());
+					screen.show("menuPanel");
+				}
 
 				break;
 			}
