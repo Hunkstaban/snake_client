@@ -60,9 +60,10 @@ public class API {
         return messageMap.get("message");
     }
 
-
+    //method that parses messages from JSON to Strings, so that they can be used in the program
     public int getUserID (String serverMessage) {
         JSONParser jsonParser = new JSONParser();
+        //try catch which catches any would be mistakes in the JSON format
         try {
             Object object = jsonParser.parse(serverMessage);
             JSONObject jsonObject = (JSONObject)object;
@@ -73,23 +74,25 @@ public class API {
         return -1;
     }
 
-
+    //method that'll initiate a game on the server
     public Game startGame(Game game) {
         String serverMessage = connection.put(new Gson().toJson(game),"games/start");
         return new Gson().fromJson(serverMessage, Game.class);
     }
 
+    //method that'll delete game from server, and show a serverMessage, when a game is deleted
     public String deleteGame(int gameID) {
         String serverMessage = connection.delete("games/"+ gameID);
         return parseMessage(serverMessage);
     }
 
+    //making an ArrayList with games, which will retrieve all active games from the server
     public ArrayList<Game> getAllActiveGames(int userId) {
         ArrayList<Game> games = new Gson().fromJson(connection.get("games/pending/" + userId), new TypeToken<ArrayList<Game>>(){}.getType());
         return games;
     }
 
-    //making an ArrayList with scores
+    //making an ArrayList with scores, which will retrieve the highscores from the server
     public ArrayList<Score> getHighscores() {
        return new Gson().fromJson(connection.get("highscores"), new TypeToken<ArrayList<Score>>(){}.getType());
     }

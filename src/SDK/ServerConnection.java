@@ -11,6 +11,7 @@ public class ServerConnection {
 
     //constructor
     public ServerConnection(){
+        //giving hostAddress and port the same values as the server, so that they can connect
         this.hostAddress="http://localhost";
         this.port=8888;
         }
@@ -36,6 +37,8 @@ public class ServerConnection {
         return port;
     }
 
+    /*creating methods for get, delete, post and put, so that it will be able to send and recieve data to the server
+    and the API can use them*/
     public String get(String path){
 
         Client client = Client.create();
